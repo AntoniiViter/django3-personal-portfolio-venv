@@ -9,7 +9,7 @@
 <h3 class="text-center mb-5">Antonio Banderos has written {{ blogs_count }} blog{{ blogs_count|pluralize }}</h3>
 
 {% for blog in all_blogs %}
-<div class="row justify-content-center my-3">
+<div class="row justify-content-center my-3 perenos">
   <div class="col-md-10">
     <a href="{% url 'blog:detail' blog.id %}">
       <h2>{{ blog.title }}</h2>
